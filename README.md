@@ -1,1 +1,0 @@
-# kartikvekariyaresume.github.io
