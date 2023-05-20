@@ -1,0 +1,839 @@
+<!DOCTYPE HTML>
+<html lang="eng">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Kartik Vekariya</title>
+    <link rel="icon" type="image/x-icon" href="https://img.icons8.com/external-others-inmotus-design/1x/external-K-qwerty-keypad-others-inmotus-design-3.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<style>
+    .navbar {
+    margin-bottom: 0;
+    padding: 5px;
+    background-color: #393E46;
+    z-index: 9999;
+    border: 0;
+    margin-right: 0;
+    font-family: Montserrat, sans-serif;
+    font-size: 12px !important;
+    letter-spacing: 2px;
+    border-radius: 0;
+    box-shadow: 0 2px 2px -1.5px rgba(0,0,0,1);
+}
+img {
+   object-fit: cover;
+}
+.navbar li a, .navbar .navbar-brand {
+    color: #EEEEEE !important;
+}
+
+.navbar-nav li a:hover, .navbar-nav li.active a {
+    color:#00ADB5  !important;
+}
+
+.navbar-toggle li a:hover{
+  color: #ffffff !important;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #ffffff;
+}
+
+.navbar-toggle:hover {
+    background: #EEEEEE !important;
+    color: #EEEEEE !important;
+}
+
+.header{
+    margin-top: 300px;
+    text-align: center;
+}
+.soc:hover{
+    opacity: 0.4;
+}
+.about{
+    margin: 270px 0px 0px 0px;
+    justify-content: center;
+    text-align: center;
+}
+.heading{
+    font-size: 50px;
+    color: #EEEEEE;
+    font-family:sans-serif;
+    text-align: center;
+    padding: 40px 0px 0px 0px;
+}
+.grid-about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 100px;
+}
+
+.about-img{
+    margin: 20px 0px 80px 130px;
+}
+.about-info{
+    margin-right: 130px;
+}
+.about-p{
+    font-size: 25px;
+    color: #00ADB5;
+    text-align: center;
+    margin-top: 0px;
+    padding-top: 70px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    font-family:cursive;
+}
+hr{
+    color: #00ADB5;
+    margin: 0px 690px 50px 690px;
+    justify-content: center;
+}
+.p-2 {
+    font-size: 25px;
+    color: #EEEEEE;
+    text-align: left;
+    align:center;
+}
+.skill-1{
+    margin: 10px 20px 20px 480px; 
+    font-family: cursive;
+}     
+.container-skill { 
+    background-color: #393E46;
+    width: 550px;
+    position: relative;
+
+    margin: 30px 0px 30px 0px;
+    border-radius: 15px;
+    justify-content: center;
+}
+      
+.skill {
+    background-color:#00ADB5;
+    color: white;
+    padding: 1%;
+    text-align: right;
+    justify-content: center;
+    font-size: 20px;
+    border-radius: 15px;
+}
+.html {
+ width: 80%;
+}
+.css {
+width: 70%;
+}
+.bootstrap {
+width: 60%;
+}
+.net{
+    width: 50%;
+}
+.php {
+width: 60%;
+}
+.grid-photo{
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-gap: 40px;
+    justify-content: center;
+}
+.img-box{
+    border: 5px solid #222831;
+    width: 300px;
+    height: 30  0px;
+    border-radius: 20px;
+    
+}
+.img-box:hover{
+    color: #00ADB5;
+    opacity: 0.5;
+}
+.grid-project{
+    display: grid;
+    grid-template-columns: 500px 500px;
+    grid-gap: 50px;
+    justify-content: center;
+
+}
+.project-item{
+    background-color: #393E46;
+    width: 500px;
+    height: 525px;
+    border-radius: 10px;
+    justify-content: center;
+    border: 2px solid #00ADB5;
+}
+
+.grid-edu{
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-gap: 50px;
+    justify-content: center;
+}
+.edu-item{
+    background-color: #222831;
+    width: 300px;
+    height: 400px;
+    border-radius: 10px;
+    justify-content: center;
+    border: 2px solid #00ADB5;
+}
+.img-1 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.grid-certi{
+    display: grid;
+    grid-template-columns: 500px 500px;
+    grid-gap: 50px;
+    justify-content: center;
+
+}
+.certi-item{
+    background-color: #393E46;
+    width: 500px;
+    height: 450px;
+    border-radius: 10px;
+    justify-content: center;
+    border: 2px solid #00ADB5;
+}
+.btn-1:hover{
+    opacity: 0.7;
+}
+.contact{
+    background-color: #222831;
+    border:1px solid #00ADB5;
+    padding: 20px 190px 20px 10px;
+    margin: 10px 0px 10px 0px;
+    align-items: center;
+    border-radius: 10px;
+    
+}
+.contact::placeholder{
+    color: #EEEEEE;
+}
+.con-btn{
+    padding: 10px 40px 10px 40px;
+    text-decoration: none;
+    background-color: #222831;
+    border: 1px solid #00ADB5;
+    border-radius: 10px;
+    margin: 100px;
+}
+.con-btn:hover{
+    opacity: 0.5;
+}
+.footer{
+    font-size: 20px;
+    text-align: center;
+    margin-top: 40px;
+    color: #EEEEEE;
+}
+
+@media screen and (max-width:699px) {  
+
+.grid-about {
+display: grid;
+grid-template-columns: 600px;
+grid-template-rows:700px, 700px;
+grid-gap: 20px;
+}
+
+.about-img{
+    justify-content: center;
+    margin-left: 0;
+}
+.about-img{
+    margin: 20px 0px 20px 0px;
+}
+.about-info{
+justify-content: center;
+margin-right: 0px;
+}
+.about-p{
+    font-size: 20px;
+    color: #00ADB5;
+    text-align: center;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-family:cursive;
+    justify-content: center;
+}
+hr{
+display: none;
+}
+.skill-1{
+    margin: 20px 20px 20px 200px; 
+    font-family: cursive;
+}  
+.container-skill { 
+    background-color: #393E46;
+    width: 250px;
+    border-radius: 15px;
+    margin-right: 10px;
+    margin-left: 0%;
+    justify-content: center;
+}
+      
+.skill {
+    background-color:#00ADB5;
+    color: white;
+    padding: 1%;
+    text-align: right;
+    justify-content: center;
+    font-size: 20px;
+    border-radius: 15px;
+}
+.html {
+ width: 80%;
+}
+.css {
+width: 70%;
+}
+.bootstrap {
+width: 60%;
+}
+.net{
+    width: 50%;
+}
+.php {
+width: 60%;
+}
+.grid-photo{
+    display: grid;
+    grid-template-columns: 300px;
+    grid-gap: 40px;
+    justify-content: center;
+}
+.img-box{
+    border: 5px solid #222831;
+    width: 300px;
+    height: 30  0px;
+    border-radius: 20px;
+    
+}
+.img-box:hover{
+    color: #00ADB5;
+    opacity: 0.5;
+}
+.grid-project{
+    display: grid;
+    grid-template-columns: 500px;
+    grid-gap: 50px;
+    justify-content: center;
+
+}
+.project-item{
+    background-color: #393E46;
+    width: 500px;
+    height: 525px;
+    border-radius: 10px;
+    justify-content: center;
+    border: 2px solid #00ADB5;
+}
+
+.grid-edu{
+    display: grid;
+    grid-template-columns: 300px;
+    grid-gap: 50px;
+    justify-content: center;
+}
+.edu-item{
+    background-color: #222831;
+    width: 300px;
+    height: 400px;
+    border-radius: 10px;
+    justify-content: center;
+    border: 2px solid #00ADB5;
+}
+.img-1 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.grid-certi{
+    display: grid;
+    grid-template-columns: 500px;
+    grid-gap: 50px;
+    justify-content: center;
+
+}
+.certi-item{
+    background-color: #393E46;
+    width: 500px;
+    height: 450px;
+    border-radius: 10px;
+    justify-content: center;
+    border: 2px solid #00ADB5;
+}
+.btn-1:hover{
+    opacity: 0.7;
+}
+}
+@media screen and (max-width:1280px) and (min-width:700px) {  
+
+.grid-about {
+display: grid;
+grid-template-columns: 700px;
+grid-template-rows:700px;
+grid-gap: 10px;
+}
+
+.about-img{
+    justify-content: center;
+    margin-left: 0;
+}
+.about-img{
+    margin: 20px 0px 20px 0px;
+    max-width: 100%;
+}
+.about-info{
+justify-content: center;
+margin-right: 0px;
+}
+.about-p{
+    font-size: 25px;
+    color: #00ADB5;
+    text-align: center;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 20px;
+    font-family:cursive;
+    justify-content: center;
+}
+hr{
+display: none;
+}
+.skill-1{
+    margin: 20px 20px 20px 200px; 
+    font-family: cursive;
+    justify-content: center;
+    
+}  
+.container-skill { 
+    background-color: #393E46;
+    width: 450px;
+    border-radius: 15px;
+    margin-right: 10px;
+    margin-left: 150px;
+    justify-content: center;
+}
+      
+.skill {
+    background-color:#00ADB5;
+    color: white;
+    padding: 1%;
+    text-align: right;
+    justify-content: center;
+    font-size: 20px;
+    border-radius: 15px;
+}
+.p-2 {
+    font-size: 25px;
+    color: #EEEEEE;
+    text-align: left;
+    align:center;
+    margin-left: 150px;
+}
+.html {
+ width: 80%;
+}
+.css {
+width: 70%;
+}
+.bootstrap {
+width: 60%;
+}
+.net{
+    width: 50%;
+}
+.php {
+width: 60%;
+}
+.grid-photo{
+    display: grid;
+    grid-template-columns: 300px;
+    grid-gap: 40px;
+    justify-content: center;
+}
+.img-box{
+    border: 5px solid #222831;
+    width: 300px;
+    height: 30  0px;
+    border-radius: 20px;
+    
+}
+.img-box:hover{
+    color: #00ADB5;
+    opacity: 0.5;
+}
+.grid-project{
+    display: grid;
+    grid-template-columns: 500px;
+    grid-gap: 50px;
+    justify-content: center;
+
+}
+.project-item{
+    background-color: #393E46;
+    width: 500px;
+    height: 525px;
+    border-radius: 10px;
+    justify-content: center;
+    border: 2px solid #00ADB5;
+}
+
+.grid-edu{
+    display: grid;
+    grid-template-columns: 300px;
+    grid-gap: 50px;
+    justify-content: center;
+}
+.edu-item{
+    background-color: #222831;
+    width: 300px;
+    height: 400px;
+    border-radius: 10px;
+    justify-content: center;
+    border: 2px solid #00ADB5;
+}
+.img-1 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.grid-certi{
+    display: grid;
+    grid-template-columns: 500px;
+    grid-gap: 50px;
+    justify-content: center;
+
+}
+.certi-item{
+    background-color: #393E46;
+    width: 500px;
+    height: 450px;
+    border-radius: 10px;
+    justify-content: center;
+    border: 2px solid #00ADB5;
+}
+.btn-1:hover{
+    opacity: 0.7;
+}
+}
+
+</style>
+
+</head>
+<body style="background-color: #222831;">
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+          <div class="navbar-header ">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" style="font-family: cursive;">KARTIK VEKARIYA</a>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+              <ul class="nav navbar-nav navbar-right" style="font-family: cursive;">
+                  <li><a href="#home">Home</a></li>
+                  <li><a href="#about">About Me</a></li>
+                  <li><a href="#skill">Skills</a></li>
+                  <li><a href="#port">Portfolio</a></li>
+                  <li><a href="#pro">Project</a></li>
+                  <li><a href="#edu">Education</a></li>
+                  <li><a href="#certi">Certi & Intern</a></li>
+                  <li><a href="#contact">Contact Me</a></li>
+              </ul>
+          </div>
+      </div>
+  </nav> 
+  <section id="home">
+    <div class="header">
+    <h1 style="font-size: 80px; color: #EEEEEE;">Kartik Vekariya</h1>
+    <h1 style="color: #ffffff; font-size: 45px;"> I am
+        <a class="typewrite" data-period="2000" style="color: #00ADB5; text-decoration: none;" data-type='["Designer.", "Freelancer.", "Innovative.", "Ambitious." ]'>
+          <span class="wrap"></span>
+        </a>
+      </h1>
+      <div style="margin-top: 30px;" >
+        <a class="soc" href="https://www.facebook.com/kartik.vekariya.56/" target="_blank"><img src="./img/social/facebook-50.png" href="" style="height: 40px; width: 40px;"></a> &nbsp;
+        <a class="soc" href="https://www.instagram.com/kartikvekariya_/" target="_blank"><img src="./img/social/instagram-50.png" style="height: 40px; width: 40px;"></a> &nbsp;
+        <a class="soc" href="https://www.linkedin.com/in/kartik-vekariya-379876195/?trk=people-guest_people_search-card&originalSubdomain=in" target="_blank"><img src="./img/social/linkedin-50.png" style="height: 40px; width: 40px;"></a>
+      </div>
+      <div style="position: relative; top:130px;" >
+        <a class="soc" href="#about" style="text-decoration: none; color: #EEEEEE;"><h1 style="font-size: 70px;">&#8595;</h1></a>
+      </div>
+    </div>
+  </section>
+  <section id="about">
+    <div class="about"  style="background-color: #393E46;">
+        <h1 class="heading"> About Me</h1>
+        <hr style="border: 2px solid; ">
+            <div class="grid-about">
+
+                <div class="about-img">
+                    <img src="./img/phtos/profile.jpeg" style="height: 550px; border-radius: 12px;">
+                </div>
+            
+                <div class="about-info">
+                   
+                   <p class="about-p">I am Kartik Vekariya, and I am a UI/UX designer with expertise in PHP,
+                    .NET, C#, HTML, CSS, and more.
+                    I am passionate about creating intuitive and visually appealing user experiences,
+                    constantly refining my design thinking and technical abilities.
+                    Known for my attention to detail and collaborative approach,
+                    I am committed to staying up-to-date with the latest design and development trends.
+                    Whether I am crafting wireframes,
+                    coding  web applications,
+                    I always strive to exceed expectations results.</p>
+                </div>
+            </div>
+    </div>
+  </section>
+  <section id="skill">
+    <div style="padding-bottom: 70px;">
+        <h1 class="heading">Skills</h1>
+        <hr style="border: 2px solid; ">
+        <div class="skill-1">
+        <p class="p-2">HTML</p>
+        <div class="container-skill">
+            <div class="skill html">80%</div>
+        </div>
+      
+        <p class="p-2">CSS</p>
+        <div class="container-skill">
+            <div class="skill css">70%</div>
+        </div>
+        <p class="p-2">BOOTSTRAP</p>
+        <div class="container-skill">
+            <div class="skill bootstrap">60%</div>
+        </div>
+        <p class="p-2">.NET</p>
+        <div class="container-skill">
+            <div class="skill net">50%</div>
+        </div>
+        <p class="p-2">PHP</p>
+        <div class="container-skill">
+            <div class="skill php">60%</div>
+        </div>
+    </div>
+    </div>
+  </section>
+  <section id="port">
+    <div style="background-color: #393E46; padding-bottom: 70px;">
+        <h1 class="heading">Portfolio</h1>
+        <hr style="border: 2px solid;">
+        <div class="grid-photo">
+            <a href="https://www.shutterstock.com/g/ThePhotographyStudio" target="_blank">
+                <img class="img-box" src="./img/quote/1.jpg">
+            </a>
+            <a href="https://www.shutterstock.com/g/ThePhotographyStudio" target="_blank">
+                <img class="img-box" src="./img/quote/2.jpg">
+            </a>
+            <a href="https://www.shutterstock.com/g/ThePhotographyStudio" target="_blank">
+                <img class="img-box" src="./img/quote/3.jpg">
+            </a>
+            <a href="https://www.shutterstock.com/g/ThePhotographyStudio" target="_blank">
+                <img class="img-box" src="./img/quote/4.jpg">
+            </a>
+            <a href="https://www.shutterstock.com/g/ThePhotographyStudio" target="_blank">    
+                <img class="img-box" src="./img/quote/5.jpg">
+            </a>
+            <a href="https://www.shutterstock.com/g/ThePhotographyStudio" target="_blank">
+                <img class="img-box" src="./img/quote/6.jpg">
+            </a>
+            <a href="https://www.shutterstock.com/g/ThePhotographyStudio" target="_blank">   
+                <img class="img-box" src="./img/quote/7.jpg">
+            </a>
+            <a href="https://www.shutterstock.com/g/ThePhotographyStudio" target="_blank">   
+                <img class="img-box" src="./img/quote/8.jpg">
+            </a>
+            <a href="https://www.shutterstock.com/g/ThePhotographyStudio" target="_blank">    
+                <img class="img-box" src="./img/quote/9.jpg">
+            </a>
+
+        </div>
+    </div>
+  </section>
+  <section id="pro">
+    <div style="padding-bottom: 70px;">
+        <h1 class="heading">Projects</h1>
+        <hr style="border: 2px solid;">
+        <div class="grid-project">
+            <div class="project-item">
+                <img class="img-1" src="https://www.nayaindia.com/wp-content/uploads/2021/06/election-maharashtara-500x250.jpg" style="width: 450px; height: 250px; border-radius: 10px;border: 2px solid #393E46;margin-top: 10px;">
+                <h2 style="font-family: cursive; color: #EEEEEE; text-align: center;">Online Voting System</h2>
+                <p style="color: #00ADB5; font-size: 18px;line-height: 25px; padding: 10px;font-family: cursive; text-align: center;">An online voting system is a digital platform that allows voters to cast their votes electronically using web development technologies like HTML and CSS for the user interface design,
+                    and programming languages like PHP for the backend processing of voting data.
+                    It is important to prioritize security and accuracy to ensure fair and tamper-free elections.</p>
+            </div>
+            <div class="project-item">
+                <img class="img-1" src="https://5.imimg.com/data5/CL/NV/MY-72665115/sales-management-service-500x500.jpg" style="width: 450px; height: 250px; border-radius: 10px;border: 2px solid #393E46;margin-top: 10px;">
+                <h2 style="font-family: cursive; color: #EEEEEE; text-align: center;">Sales Management System</h2>
+                <p style="color: #00ADB5; font-size: 18px;line-height: 25px; padding: 10px;font-family: cursive; text-align: center;">A sales management system is a software tool used to streamline sales processes and manage activities.
+                     It is designed using HTML and CSS for the user interface, and coded using Dot Net and C# for complex functionality. 
+                     With a sales management system, businesses can optimize their sales strategy by tracking activities and managing customer relationships.</p>
+            </div>
+        </div>
+    </div>
+  </section>
+  <section id="edu">
+    <div style="background-color: #393E46; padding-bottom: 70px;">
+        <h1 class="heading">Education</h1>
+        <hr style="border: 2px solid;">
+        <div class="grid-edu">
+        <div class="edu-item">
+            <img class="img-1" src="https://play-lh.googleusercontent.com/WJf_wP30DXlva3oJUd3fqmMsO5e7j6Q-svFxlizUyd8BdbYXAD5zPuur4xbSCvhH8A" style="height: 250px; width: 250px;margin-top: 10px; align-items: center;border-radius: 5px;">
+            <h4 style="font-family: cursive; color: #EEEEEE; text-align: center;">Sarvodaya School - Rajkot</h4>
+            <p style="color: #00ADB5; font-size: 18px;line-height: 20px; padding: 5px; font-family: cursive; text-align: center;">10<sup>th</sup></p>
+            <p style="color: #00ADB5; font-size: 18px;line-height: 20px; padding: 5px; font-family: cursive; text-align: center;">Percentage:- 61%</p>
+
+        </div>
+        <div class="edu-item">
+            <img class="img-1" src="https://media.licdn.com/dms/image/C560BAQF7iTOoL1JORA/company-logo_200_200/0/1584505939206?e=2147483647&v=beta&t=Wx_H36wjlDK5jBKlsDMwfcP2n52P2Ah_hRza8RCfCsw" style="height: 250px; width: 250px;margin-top: 10px; align-items: center;border-radius: 5px;">
+            <h4 style="font-family: cursive; color: #EEEEEE; text-align: center;">Goverment Polytechnic - Rajkot</h4>
+            <p style="color: #00ADB5; font-size: 18px;line-height: 20px; padding: 5px; font-family: cursive; text-align: center;">Diploma in IT</p>
+            <p style="color: #00ADB5; font-size: 18px;line-height: 20px; padding: 5px; font-family: cursive; text-align: center;">Percentage:- 69.60%</p>
+
+        </div>
+        <div class="edu-item">
+            <img class="img-1" src="https://www.careermarg.in/uploads/college-logo/1645804219-rk-university-rajkot-logo.png" style="height: 250px; width: 250px;margin-top: 10px; align-items: center;border-radius: 5px;">
+            <h4 style="font-family: cursive; color: #EEEEEE; text-align: center;">RK University - Tramba</h4>
+            <p style="color: #00ADB5; font-size: 18px;line-height: 20px; padding: 5px; font-family: cursive; text-align: center;">B.Tech in IT</p>
+            <p style="color: #00ADB5; font-size: 18px;line-height: 20px; padding: 5px; font-family: cursive; text-align: center;">7<sup>th</sup> Sem Percentage:- 72.90%</p>
+
+        </div>
+    </div>
+    </div>
+  </section>
+  <section id="certi">
+    <div style="padding-bottom: 70px;">
+        <h1 class="heading">Certificate & Internship</h1>
+        <hr style="border: 2px solid;"> 
+        <div class="grid-certi">
+            <div class="certi-item">
+                <img class="img-1" src="https://saurashtrauniversity.edu/uni-files/gallery/2020-05-21/smart-city-hackathon-2020-20200521133437-190.jpeg" style="width: 450px; height: 250px; border-radius: 10px;border: 2px solid #393E46;margin-top: 10px;">
+                <h2 style="font-family: cursive; color: #EEEEEE; text-align: center; margin-bottom: 20px;">Smart City Hackathon-2020</h2>
+                <h4 style="font-family: cursive; color: #00ADB5; text-align: center;">2days Smart City Hackathon at Saurashtra University </h4>
+                <p style="color: #00ADB5; font-size: 18px;line-height: 25px; padding: 10px;font-family: cursive; text-align: center;"></p>
+                <a class="btn-1" href="https://saurashtrauniversity.edu/university-events/smart-city-hackathon-2020/" target="_blank" type="button" style="background-color: #222831; color: #EEEEEE;text-decoration: none; border:1px solid #00ADB5; padding: 10px 20px 10px 20px;text-align: center;display: block; margin: 0px 100px 0px 100px; border-radius: 5px;">Read More</a>
+            </div>
+            <div class="certi-item">
+                <img class="img-1" src="https://www.makeintern.com/admin/uploaded_images/blog/images/bg%20(1).png" style="width: 450px; height: 250px; border-radius: 10px;border: 2px solid #393E46;margin-top: 10px;">
+                <h2 style="font-family: cursive; color: #EEEEEE; text-align: center; margin-bottom: 20px;">TatwaSoft Summer Internship</h2>
+                <h4 style="font-family: cursive; color: #00ADB5; text-align: center;">1Month Summer Internship in TatwaSoft</h4>
+                <p style="color: #00ADB5; font-size: 18px;line-height: 25px; padding: 10px;font-family: cursive; text-align: center;"></p>
+                <a class="btn-1" href="https://www.tatvasoft.com/career" target="_blank" type="button" style="background-color: #222831; color: #EEEEEE;text-decoration: none; border:1px solid #00ADB5; padding: 10px 20px 10px 20px;text-align: center;display: block; margin: 0px 100px 0px 100px; border-radius: 5px;">Read More</a>
+            </div>
+        </div>
+    </div>
+  </section>
+  <section id="contact">
+    <div style="background-color: #393E46; padding-bottom: 70px;">
+        <h1 class="heading">Contact Me</h1>
+        <hr style="border: 2px solid;">
+    <div align="center">
+        <div>
+            <input  class="contact" type="text" placeholder="Name" style="color: #EEEEEE;font-size: 15px;">
+        </div>
+        <div>
+            <input  class="contact" type="text" placeholder="Email"style="color: #EEEEEE;font-size: 15px;">
+        </div>
+        <div>
+            <textarea  class="contact" placeholder="Massage Here" style="padding: 20px 200px 20px 10px;color: #EEEEEE; font-size: 15px;"></textarea>
+        </div>
+        <div><br></div>
+        <div>
+            <a class="con-btn" href="#" type="button" style="margin-top: 20px;color: #EEEEEE; text-decoration: none;">Contact Me</a>
+        </div>
+    </div>
+    </div>
+  </section>
+  <footer>
+    <div style="padding-bottom: 40px;">
+        <div class="footer">
+            <h6 class="footer">Portfolio of @Kartik Vekariya</h6>
+        </div>
+        <div style="margin-top: 30px;" align="center">
+            <a class="soc" href="https://www.facebook.com/kartik.vekariya.56/" target="_blank"><img src="./img/social/facebook-50.png" href="" style="height: 40px; width: 40px;"></a> &nbsp;
+            <a class="soc" href="https://www.instagram.com/kartikvekariya_/" target="_blank"><img src="./img/social/instagram-50.png" style="height: 40px; width: 40px;"></a> &nbsp;
+            <a class="soc" href="https://www.linkedin.com/in/kartik-vekariya-379876195/?trk=people-guest_people_search-card&originalSubdomain=in" target="_blank"><img src="./img/social/linkedin-50.png" style="height: 40px; width: 40px;"></a>
+          </div>
+    </div>
+  </footer>
+<script>
+    var TxtType = function(el, toRotate, period) {
+        this.toRotate = toRotate;
+        this.el = el;
+        this.loopNum = 0;
+        this.period = parseInt(period, 10) || 2000;
+        this.txt = '';
+        this.tick();
+        this.isDeleting = false;
+    };
+
+    TxtType.prototype.tick = function() {
+        var i = this.loopNum % this.toRotate.length;
+        var fullTxt = this.toRotate[i];
+
+        if (this.isDeleting) {
+        this.txt = fullTxt.substring(0, this.txt.length - 1);
+        } else {
+        this.txt = fullTxt.substring(0, this.txt.length + 1);
+        }
+
+        this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+        var that = this;
+        var delta = 200 - Math.random() * 100;
+
+        if (this.isDeleting) { delta /= 2; }
+
+        if (!this.isDeleting && this.txt === fullTxt) {
+        delta = this.period;
+        this.isDeleting = true;
+        } else if (this.isDeleting && this.txt === '') {
+        this.isDeleting = false;
+        this.loopNum++;
+        delta = 500;
+        }
+
+        setTimeout(function() {
+        that.tick();
+        }, delta);
+    };
+
+    window.onload = function() {
+        var elements = document.getElementsByClassName('typewrite');
+        for (var i=0; i<elements.length; i++) {
+            var toRotate = elements[i].getAttribute('data-type');
+            var period = elements[i].getAttribute('data-period');
+            if (toRotate) {
+              new TxtType(elements[i], JSON.parse(toRotate), period);
+            }
+        }
+        // INJECT CSS
+        var css = document.createElement("style");
+        css.type = "text/css";
+        css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+        document.body.appendChild(css);
+    };
+
+</script>
+</body>
+</html>
